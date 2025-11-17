@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>InmoPortal - Contacto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec", "background-light": "#f6f7f8", "background-dark": "#101922", 
+              "card-light": "#ffffff", "card-dark": "#1a2632", "text-light": "#111418", "text-dark": "#f0f2f4", 
+              "subtext-light": "#617589", "subtext-dark": "#aebac7",
+            },
+            fontFamily: {"display": ["Inter", "sans-serif"]},
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease, color 0.3s ease; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .form-input:focus, .form-textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(19, 127, 236, 0.3); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+
+    <header class="bg-card-light dark:bg-background-dark/95 shadow-lg sticky top-0 z-50 border-b border-solid border-b-[#f0f2f4] dark:border-b-[#232f3b] backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-3 text-primary">
+                    <div class="size-6"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill-opacity="0.7"></path><path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"></path></svg></div>
+                    <h2 class="text-text-light dark:text-text-dark text-xl font-bold tracking-[-0.015em]">InmoPortal</h2>
+                </a>
+                <nav class="flex items-center gap-8">
+                    <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="propiedades.html">Comprar</a>
+                    <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="propiedades.html">Alquilar</a>
+                    <a class="text-primary text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-extrabold text-center mb-4 text-text-light dark:text-text-dark">Hablemos de tu próximo proyecto</h1>
+        <p class="text-xl text-subtext-light dark:text-subtext-dark text-center mb-12">Estamos aquí para ayudarte a encontrar o vender tu propiedad ideal.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-2xl border border-gray-100 dark:border-[#232f3b]">
+                <h2 class="text-2xl font-bold mb-6 text-primary">Envíanos un mensaje</h2>
+                
+                <div class="space-y-6">
+                    <div id="hubspot-form-inmoportal" class="p-4 bg-yellow-50 dark:bg-yellow-900/50 rounded-lg border border-yellow-200 dark:border-yellow-800">
+                        <p class="font-semibold text-sm text-yellow-800 dark:text-yellow-200">
+                            **PASO 1: HAZ FUNCIONAL TU FORMULARIO**
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-xs text-yellow-700 dark:text-yellow-300">
+                            <li>Ve a HubSpot → Marketing → Formularios.</li>
+                            <li>Crea tu formulario "Contacto General" y obtén el código de incrustación (Embed Code).</li>
+                            <li>**REEMPLAZA** todo este bloque `div` (de borde amarillo) con ese código de HubSpot.</li>
+                        </ul>
+                    </div>
+                    </div>
+                <p class="text-center text-xs text-subtext-light dark:text-subtext-dark pt-4">Responderemos tu consulta en menos de 24 horas hábiles.</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-card-light dark:bg-card-dark p-8 rounded-xl shadow-lg border border-gray-100 dark:border-[#232f3b] space-y-6">
+                    <h2 class="text-2xl font-bold mb-4 text-primary">Nuestra Oficina</h2>
+                    
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">location_on</span>
+                        <div><p class="font-semibold text-text-light dark:text-text-dark">Dirección Principal</p><p class="text-subtext-light dark:text-subtext-dark">Gran Vía, 10, 28013 Madrid, España</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">phone</span>
+                        <div><p class="font-semibold text-text-light dark:text-text-dark">Teléfono</p><p class="text-subtext-light dark:text-subtext-dark">+34 910 123 456</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">mail</span>
+                        <div><p class="font-semibold text-text-light dark:text-text-dark">Email</p><p class="text-subtext-light dark:text-subtext-dark">contacto@inmoportal.com</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0">schedule</span>
+                        <div><p class="font-semibold text-text-light dark:text-text-dark">Horario</p><p class="text-subtext-light dark:text-subtext-dark">Lunes a Viernes: 9:00 - 18:00</p></div>
+                    </div>
+                </div>
+
+                <div class="aspect-video w-full rounded-xl bg-gray-300 dark:bg-gray-700 overflow-hidden shadow-lg border border-gray-200 dark:border-gray-600">
+                    <img class="w-full h-full object-cover" data-alt="Mapa de la zona de la oficina en Gran Vía, Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsvvk6MzddYXOXCvQsz3VIVxZ_boCRD0UVjjBbtCFvT_Wz5lOKuvptMBbXH7zQ8ctkmrUv0de-A7ucXT3_ZuxiM5lXE9WI9bGkKJST-ZoWZrqfQ1wa0eJi5CoMGr_mZQa1FfNa6A8BIgXbFi7_fFxKZI_3YfNBgysTBFRyXtNTjpS5frnPzYMSiuwyItj3vvYyFbTRjrgLb7-1VL3njhbzHq7nLEYC3_vJOetCqiYsESbmCtsl6yCUjHlljXXaqAapIrHZ2jlLKt8" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
