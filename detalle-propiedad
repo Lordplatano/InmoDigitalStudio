@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>InmoPortal - Detalle de Propiedad</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec", "background-light": "#f6f7f8", "background-dark": "#101922", 
+              "card-light": "#ffffff", "card-dark": "#1a2632", "text-light": "#111418", "text-dark": "#f0f2f4", 
+              "subtext-light": "#617589", "subtext-dark": "#aebac7",
+            },
+            fontFamily: {"display": ["Inter", "sans-serif"]},
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease, color 0.3s ease; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .form-input:focus, .form-textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(19, 127, 236, 0.3); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+
+    <header class="bg-card-light dark:bg-background-dark/95 shadow-lg sticky top-0 z-50 border-b border-solid border-b-[#f0f2f4] dark:border-b-[#232f3b] backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-3 text-primary">
+                    <div class="size-6"><svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill-opacity="0.7"></path><path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"></path></svg></div>
+                    <h2 class="text-text-light dark:text-text-dark text-xl font-bold tracking-[-0.015em]">InmoPortal</h2>
+                </a>
+                <nav class="flex items-center gap-8">
+                    <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="propiedades.html">Comprar</a>
+                    <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="propiedades.html">Alquilar</a>
+                    <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        
+        <div class="mb-8">
+            <div class="flex flex-wrap gap-2 items-center">
+                <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+                <span class="text-subtext-light dark:text-subtext-dark text-sm font-medium">/</span>
+                <a class="text-subtext-light dark:text-subtext-dark text-sm font-medium hover:text-primary transition-colors" href="propiedades.html">Pisos en venta</a>
+                <span class="text-subtext-light dark:text-subtext-dark text-sm font-medium">/</span>
+                <span class="text-text-light dark:text-text-dark text-sm font-semibold">Piso en Calle Mayor, 123</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            
+            <div class="lg:col-span-2 flex flex-col gap-10">
+                
+                <div class="relative group">
+                    <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-2xl min-h-[550px] shadow-xl" 
+                         data-alt="Fachada del edificio de apartamentos en un día soleado" 
+                         style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnMX5alBsZ1qYZPuRrAMyy5Uvg7gMOthUbFE7_fwq1x-KHGxM43LA-9srVp-UccJskBueOrmqRmXHLmmRe9CiIzeUSz5eUp5r6S-n_NhvoyOjm3gCnCmjwv1d5XkCBrFx-ZfBOIQCRcg0C9H1XdpbiXwKnAhsleWd7Ax5d54kyR8QZaepKILY9a9mFCqLFaRC2PKNBCR0pNYkFuk7JUONCnWnbE-VV7Wb8FEN_y-MaleBTtYOo9GOM9e0LjW35WsFU5aQOJXU8TDQ");'>
+                        
+                        <div class="absolute top-5 right-5 flex gap-3">
+                            <button class="bg-card-light/70 dark:bg-card-dark/70 backdrop-blur-sm p-3 rounded-full text-subtext-light dark:text-text-dark hover:bg-card-light dark:hover:bg-card-dark transition-all border border-transparent hover:border-primary/50 shadow-md" aria-label="Compartir propiedad">
+                                <span class="material-symbols-outlined text-xl">ios_share</span>
+                            </button>
+                            <button class="bg-card-light/70 dark:bg-card-dark/70 backdrop-blur-sm p-3 rounded-full text-subtext-light dark:text-text-dark hover:bg-card-light dark:hover:bg-card-dark transition-all border border-transparent hover:border-red-500/50 shadow-md" aria-label="Añadir a favoritos">
+                                <span class="material-symbols-outlined text-xl">favorite_border</span>
+                            </button>
+                        </div>
+                        
+                        <div class="flex justify-center gap-2 p-6">
+                            <div class="size-2.5 rounded-full bg-white shadow-md"></div>
+                            <div class="size-2.5 rounded-full bg-white/50 hover:bg-white transition-colors cursor-pointer"></div>
+                            <div class="size-2.5 rounded-full bg-white/50 hover:bg-white transition-colors cursor-pointer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-lg border border-gray-100 dark:border-[#232f3b]">
+                    <div class="flex flex-col gap-1">
+                        <h1 class="text-text-light dark:text-text-dark text-3xl font-bold tracking-[-0.03em]">Impresionante piso de 3 habitaciones en el centro</h1>
+                        <p class="text-subtext-light dark:text-subtext-dark text-base font-normal">Calle Mayor, 123, Sol, Madrid</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <p class="text-primary text-4xl font-extrabold tracking-[-0.015em] text-left sm:text-right">450.000 €</p>
+                        <p class="text-sm text-subtext-light dark:text-subtext-dark text-left sm:text-right mt-1">Ref: MP-78901</p>
+                    </div>
+                </div>
+                
+                <div class="p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-lg border border-gray-100 dark:border-[#232f3b]">
+                    <h2 class="text-2xl font-bold mb-6 text-text-light dark:text-text-dark">Características principales</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div class="flex flex-col items-center gap-2 p-3"><span class="material-symbols-outlined text-5xl text-primary">square_foot</span><span class="text-sm text-subtext-light dark:text-subtext-dark">Superficie</span><span class="font-bold text-lg text-text-light dark:text-text-dark">120 m²</span></div>
+                        <div class="flex flex-col items-center gap-2 p-3"><span class="material-symbols-outlined text-5xl text-primary">bed</span><span class="text-sm text-subtext-light dark:text-subtext-dark">Habitaciones</span><span class="font-bold text-lg text-text-light dark:text-text-dark">3</span></div>
+                        <div class="flex flex-col items-center gap-2 p-3"><span class="material-symbols-outlined text-5xl text-primary">bathtub</span><span class="text-sm text-subtext-light dark:text-subtext-dark">Baños</span><span class="font-bold text-lg text-text-light dark:text-text-dark">2</span></div>
+                        <div class="flex flex-col items-center gap-2 p-3"><span class="material-symbols-outlined text-5xl text-primary">garage</span><span class="text-sm text-subtext-light dark:text-subtext-dark">Garaje</span><span class="font-bold text-lg text-text-light dark:text-text-dark">Sí</span></div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-lg border border-gray-100 dark:border-[#232f3b]">
+                    <div class="border-b border-gray-200 dark:border-gray-700">
+                        <nav aria-label="Información de la propiedad" class="-mb-px flex space-x-8">
+                            <a class="whitespace-nowrap py-3 px-1 border-b-2 font-semibold text-base text-primary border-primary transition-colors" href="#">Descripción</a>
+                            <a class="whitespace-nowrap py-3 px-1 border-b-2 font-medium text-base text-subtext-light dark:text-subtext-dark hover:text-text-light dark:hover:text-text-dark hover:border-gray-300 dark:hover:border-gray-500 border-transparent transition-colors" href="#">Características</a>
+                        </nav>
+                    </div>
+                    <div class="py-6 space-y-4 text-subtext-light dark:text-subtext-dark text-base leading-relaxed">
+                        <p>Descubre este magnífico piso en el corazón de la ciudad. Con una distribución ideal, cuenta con un amplio salón-comedor con grandes ventanales que inundan de luz natural el espacio. La cocina, totalmente equipada...</p>
+                    </div>
+                </div>
+                
+                <div class="p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-lg border border-gray-100 dark:border-[#232f3b]">
+                    <h2 class="text-2xl font-bold mb-4 text-text-light dark:text-text-dark">Ubicación exacta</h2>
+                    <div class="aspect-video w-full rounded-xl bg-gray-300 dark:bg-gray-700 overflow-hidden shadow-inner border border-gray-200 dark:border-gray-600">
+                        <img class="w-full h-full object-cover" data-alt="Mapa detallado mostrando la zona céntrica de Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsvvk6MzddYXOXCvQsz3VIVxZ_boCRD0UVjjBbtCFvT_Wz5lOKuvptMBbXH7zQ8ctkmrUv0de-A7ucXT3_ZuxiM5lXE9WI9bGkKJST-ZoWZrqfQ1wa0eJi5CoMGr_mZQa1FfNa6A8BIgXbFi7_fFxKZI_3YfNBgysTBFRyXtNTjpS5frnPzYMSiuwyItj3vvYyFbTRjrgLb7-1VL3njhbzHq7nLEYC3_vJOetCqiYsESbmCtsl6yCUjHlljXXaqAapIrHZ2jlLKt8" loading="lazy"/>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="lg:col-span-1">
+                <div class="sticky top-28 space-y-6">
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-2xl border border-gray-100 dark:border-[#232f3b]">
+                        <h3 class="text-xl font-bold text-center mb-6 text-text-light dark:text-text-dark border-b pb-4 border-gray-100 dark:border-gray-700">Contactar con el anunciante</h3>
+                        
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="size-16 rounded-full bg-cover bg-center ring-2 ring-primary/30 shadow-md flex-shrink-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUBJ6Y2W0WN-FaALiQRDkic5AXewyNrmr11b8MYX984zHtlLcWGEOfMNZyLwtLm7mb8QXn14hLgoxmKxlJ4WPj3E5ZJlb_cwyDXpXOsC6ZkW3fiqglNK8nebxeIssWcjk8QqlKti3QRm_Yf7Lg5xdDKb6VUMNP-InmirDpPLUTE6vod1bbThUScgzuG1sp2JEVoyr6wZ_5YjlKzWoP_LTxMCZNnFeWg4PafIJs4QIrQztxFEDM7UTFVsvko4oLjezzu58TSlJFji8')"></div>
+                            <div><p class="font-bold text-lg text-text-light dark:text-text-dark">María González</p><p class="text-sm text-subtext-light dark:text-subtext-dark">Agente Senior - InmoCentro</p></div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div id="hubspot-form-inmoportal" class="p-4 bg-yellow-50 dark:bg-yellow-900/50 rounded-lg border border-yellow-200 dark:border-yellow-800">
+                                <p class="font-semibold text-sm text-yellow-800 dark:text-yellow-200">
+                                    **PASO 1: HAZ FUNCIONAL TU FORMULARIO**
+                                </p>
+                                <ul class="list-disc list-inside mt-2 text-xs text-yellow-700 dark:text-yellow-300">
+                                    <li>Ve a HubSpot → Marketing → Formularios.</li>
+                                    <li>Crea tu formulario "Interés en Propiedad" y obtén el código de incrustación (Embed Code).</li>
+                                    <li>**REEMPLAZA** todo este bloque `div` (de borde amarillo) con ese código de HubSpot.</li>
+                                </ul>
+                            </div>
+                            <p class="text-center text-xs text-subtext-light dark:text-subtext-dark pt-2">Tus datos serán tratados con la máxima confidencialidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
